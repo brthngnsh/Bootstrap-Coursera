@@ -1,10 +1,10 @@
 {
-  "name": "coursera-assignment",
+  "name": "confusion",
   "version": "1.0.0",
-  "description": "coursera bootstrap assignments",
+  "description": "This is a website for Ristorante Con Fusion",
   "main": "index.html",
   "scripts": {
-    "start":"npm run lite",
+    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
   },
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/brthngnsh/Bootstrap-Coursera.git"
   },
-  "author": "barathan ganesh",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/brthngnsh/Bootstrap-Coursera/issues"
@@ -20,5 +20,10 @@
   "homepage": "https://github.com/brthngnsh/Bootstrap-Coursera#readme",
   "devDependencies": {
     "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   }
 }
