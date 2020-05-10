@@ -26,7 +26,7 @@
                         <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                     </ul> 
                     <span class="navbar-text">
-                        <a data-toggle="modal" data-target="#loginModal">
+                        <a id="Login_">
                             <span class="fa fa-sign-in"></span> Login
                         </a>
                     </span>
@@ -92,7 +92,7 @@
                                             <input type="radio" name="nbPeople" value="2" autocomplete="off"> 2
                                         </label>
                                         <label class="btn">
-                                            <input type="radio" name="nbPeople" value="3" autocomplete="off"> 3
+                                            <input type="radio" name="nbPeople" value="3" autocomplete="off" checked> 3
                                         </label>
                                         <label class="btn">
                                             <input type="radio" name="nbPeople" value="4" autocomplete="off"> 4
@@ -154,7 +154,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a role="button" class="btn btn-block btn-lg btn-warning" data-toggle="modal" data-target="#Reserve_a_Table_Modal">Reserve Table</a>
+                    <a role="button" class="btn btn-block btn-lg btn-warning" id="Reserve_">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -331,8 +331,15 @@
                     }
                     
                 });
+                $('#Login_').click(function(){
+                    $('#loginModal').modal('show');
+                });
+                
+                $('#Reserve_').click(function(){
+                    $('#Reserve_a_Table_Modal').modal('show');
+                });
+
             });
-        </script>
-        
+        </script>        
     </body>
 </html>
