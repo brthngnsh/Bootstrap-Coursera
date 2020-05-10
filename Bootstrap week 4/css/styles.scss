@@ -10,7 +10,6 @@ $carousel-item-height: 300px;
 	margin:0px auto;
 	padding: $pad-up-dn $pad-left-right;
 }
-
 .row-header{
     @include zero-margin(0px,0px);
 }
@@ -75,14 +74,16 @@ body{
     z-index: 1;
 }
 
-.modal-header {
+.modal-body{
+    background-color: $background-pale;
+}
+.modal-header{
     background-color: $background-dark;
     color: floralwhite;
+    .close{
+        color: floralwhite;
+    }
     button {
         color: floralwhite;
     }
-}
-
-.modal-body {
-    background: $background-pale;
 }
